@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a programar com html!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+     
+   <header class="topo">
+    <!---<h1> é o titulo principal-->
+    <h1> Aprendendo html!! </h1><hr>
+</header>
+
+<nav class=" menu">
+    <!--<p. são paragrafos-->
+    <p> Vou fazer um formulário hoje para aprender! se quiser acessar outra pagina so ir no link</p>
+    <a href="semantico.html" target="_blank">Pagina mais bonitinha</a><br><hr>
+</nav>
+
+<section class="coluna-50">
+    <!---<h2> são subtitulos-->
+    <h2>Clica no link abaixo para escutar uma musiquinha</h2>
+    
+    <!--<a href> são os links junto com target="_blancK"-->
+        <a href="https://www.youtube.com/watch?v=7xbPK_y1Dv8" target="_blanck">Ir  para o googgle </a><img src="img/seta.png"width="20">
+        <hr>
+        <br><br>
+
+        <h2>Agora vamos preencher o formulário</h2><hr>
+
+    <!----tag para para formulario--> <!----label é oq fica na frente e placeholder é marca dagua-->
+    <form>
+        <!---LEGENDA PARA NOME-->
+        <label for="campo_nome">Nome:</label>
+
+        <!---CAMPO INPUT DO TYPE TEXT----->
+        <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required> <!---required é para ser obrigatorio preencher-->
+        
+        <br><br>
+
+         <!----LEGENDA PARA EMAIL-->
+        <label for="campo_email">Email:</label>
+
+       <!----CAMPO INPUT PARA EMAIL-->
+        <input id="campo_email" type="email" placeholder="Digite seu email aqui" required >
+        
+        <br><br>
+        
+        <!-----LEGENDA PARA SENHA-->
+        <label for="campo_senha">Senha:</label>
+
+        <!------CAMPO INPUT PARA SENHA-->
+        <input id="campo_senha" type="password" placeholder="Digite sua senha aqui" required>
+        
+        <br><br>
+
+        <h2>Escolha um animal!</h2><br>
+
+
+<!---CAMPO INPUT TYPE=RADIO PARA UMA UNICA ESOLHA-->
+        <input type="radio" id="dog" name="animal" value="cachorro">
+        <label for="dog">Cachorro</label><br><br>
+
+        <input type="radio" id="cat" name="animal" value="gato">
+        <label for="cat">gato</label><br><br>
+
+        <input type="radio" id="bir" name="animal" value="passarinho">
+        <label for="bird">passarinho</label><br>
+
+        <h2>Quais desses itens você tem na sua casa?</h2>
+
+        <!---CAMPO INPUT TYPE=CHECKBOX PARA MULTIPLAS ESCOLHAS-->
+        <input id="item1" type="checkbox" name="intem1" value="Tv">
+        <label for="item1">Tv</label><br><br>
+
+        <input id="item2" type="checkbox" name="intem2" value="Celular">
+        <label for="item2">Celular</label><br><br>
+
+        <input id="item3" type="checkbox" name="intem3" value="Cama">
+        <label for="item3">Cama</label><br><br>
+
+        <h2>Escolha uma cor:</H2>
+            <select>
+                <option selected disabled value="">Selecione uma cor</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="rosa">Rosa</option>
+                <option value="preto">Preto</option>
+                <option value="amarelo">Amarelo</option>
+            </select>
+
+            <br><br><br>
+
+            <h2>Digite sua mensagem:</h2>
+
+            <!------rows significa linhas e cols é colunas-->
+            <textarea placeholder="Digite aqui sua mensagem" rows="15" cols="55"></textarea>
+            
+            <br><br>
+
+        <!---CAMPO INPUT DO TYPE SUBMIT-->
+        <input type="submit" value="Enviar sua resposta"><br><br>
+
+
+
+    </form>
+    <!---até aqui-->
+
+<br>
+
+   
+    <!---hr são as linhas--> 
+    <hr>
+
+    <!--<img src> são tags de imagem--->
+<!---weidth e Height são para definir tamanho de imagem -->
+    <img src="img/urso.gif" weidth="300" height="300">  <p> imagem ilustrativa</p>
+
+<hr>
+<hr>
+
+<h3>tabelas</h3>
+<!--width tag de tamanhoopara tabela-->
+<!---border é a borda-->
+<!---style é CSS ainda não aprendi totalmente-->
+<table width="100%" border="1" style="text-align: center;">
+    <tr>
+     <th>nome</th>
+     <th>idade</th>
+     <th>peso</th>
+    </tr>
+    <tr>
+      <td>Allan</td>
+      <td>19</td>
+      <td>68 kg</td>
+     </tr>
+     <tr>
+        <td>João</td> 
+        <td>28</td>
+        <td> 89 kg</td>
+    </tr>
+    </table>
+
+    <br><br>
+
+        <table width="100%" border="1" style="text-align: center;">
+            <tr>
+                <th>nome</th>
+                <th>altura</th>
+                <th>codigo</th>
+            </tr>
+            <tr>
+                <td>Bia</td>
+                <td>1,65</td>
+                <td>0665</td>
+            </tr>
+        </table>
+
+        <br><br><br>
+
+<button>Fechar formulario</button>
+
+</section>
+
+<a href="semantico.html">Div e HTML semantico</a>
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
